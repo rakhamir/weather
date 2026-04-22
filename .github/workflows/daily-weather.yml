@@ -1,6 +1,9 @@
 name: Daily Sergeli weather
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # 02:05 UTC is 07:05 in Tashkent/UTC+5. The extra 5 minutes avoids
     # GitHub's busiest start-of-hour schedule window.
